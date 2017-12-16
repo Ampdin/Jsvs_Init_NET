@@ -1,0 +1,71 @@
+// 03_03 - Method calls
+		PassingArgumentsSDK1();
+		PassingArgumentsSDK2();
+		PassingArgumentsSDK2b();
+		PassingArgumentsSDK3();
+
+// 03_03 - Methods
+		private static void PassingArgumentsSDK1() throws JavonetException {	
+			System.out.println("\nExercise 03_03a\n---------------");
+			
+			// Demo Passing Reference-Type Arguments
+			NObject objectWithProp = Javonet.New("ObjectWithProp");  
+			objectWithProp.set("PropTextValue","This is an alert stored in .NET object prop"); 
+	          
+	        NObject objectUsingObjectProp = Javonet.New("ObjectUsingObjectProp");
+	      	objectUsingObjectProp.invoke("DisplayPropValue",objectWithProp);
+	      	objectUsingObjectProp.set("ObjProperty",objectWithProp);
+	      	
+	      	System.out.println("\n*** Displaying the value of the property of an object instance that was set to the property ***\n");
+	      	System.out.println(objectUsingObjectProp.getRef("ObjProperty").get("PropTextValue").toString());
+	      	
+		}
+		//---------------------------------------------------------------------
+		private static void PassingArgumentsSDK2() throws JavonetException {	
+			System.out.println("\nExercise 03_03b1\n---------------");
+			
+			// Demo Passing Arguments by Reference with ref/out Keywords
+	     	NObject refEx = Javonet.New("RefExample");  
+			
+	      	//Wrap Java integer in AtomicReference to allow passing by reference  
+			AtomicReference<Integer> myInt = new AtomicReference<Integer>(10);  
+	  
+			refEx.invoke("Method",new NRef(myInt));  
+	  
+			System.out.println(myInt.get());  
+			//Output will display number "54" (added 44+10) because int passed by reference has been modified within the method body.  
+	    
+		}
+		//---------------------------------------------------------------------
+		private static void PassingArgumentsSDK2b() throws JavonetException {	
+			System.out.println("\nExercise 03_03b2\n---------------");
+			
+			NObject populator = Javonet.New("PopulateItems");   
+			
+			//We must wrap java array with Atomic Reference so we can pass it as a reference to NOut argument
+	      	AtomicReference<NObject[]> itemsArray = new AtomicReference<NObject[]>(null);  
+	  
+			populator.invoke("Populate", new NOut(itemsArray, "Item[]"));  
+	  		//After execution of this method local items array variable will contain five items generated within Populate method body.
+	    	
+			//Retrieve updated array
+			NObject[] items = itemsArray.get();
+
+	      	for (int i=0; i<items.length; i++)
+	        {
+				System.out.println(items[i].get("ItemName").toString());
+	        }
+		}
+
+		//---------------------------------------------------------------------
+		private static void PassingArgumentsSDK3() throws JavonetException {	
+			System.out.println("\nExercise 03_03c\n---------------");
+			
+			// Demo Passing typeof(Type) as Method Argument
+	      	NObject sampleObj = Javonet.New("Sample");  
+			sampleObj.invoke("PassTypeArg",Javonet.getType("String"));  
+			//or  
+			NType typeOfString = Javonet.getType("String");  
+			sampleObj.invoke("PassTypeArg",typeOfString);  
+	      
+		}

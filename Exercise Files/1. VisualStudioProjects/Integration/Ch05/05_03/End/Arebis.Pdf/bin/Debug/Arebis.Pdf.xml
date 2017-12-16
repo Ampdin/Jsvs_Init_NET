@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Arebis.Pdf</name>
+    </assembly>
+    <members>
+        <member name="T:Arebis.Pdf.Common.PdfFont">
+            <summary>
+            A PdfFont.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Common.PdfFont.Name">
+            <summary>
+            Name of the font.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Common.PdfFont.GetRawCharWidth(System.Char)">
+            <summary>
+            Returns the width (in 1000ths of a point) of the given character.
+            </summary>
+            <param name="c">Character to return the width of.</param>
+        </member>
+        <member name="M:Arebis.Pdf.Common.PdfFont.GetStringWidth(System.String,System.Double)">
+            <summary>
+            Gets the width needed to render the given string in the given size
+            of the current font.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Common.PdfFont.SplitText(System.String,System.Double,System.Double)">
+            <summary>
+            Adds linefeeds to split the text to limit width.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Common.PdfFont.TrimLength(System.String,System.Double,System.Double)">
+            <summary>
+            Trims the given string to not exceed the given width.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Common.PdfObjectRef">
+            <summary>
+            A PdfObject reference consisting of the ObjectId and GenerationId.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Common.PdfObjectRef.ToDefaultName">
+            <summary>
+            Returns a proposed name for this reference.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Common.PdfTransformationMatrix">
+            <summary>
+            A PdfTransformationMatrix.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Model.ModelExtensions.All(Arebis.Pdf.Model.IModelItem)">
+            <summary>
+            Enumerates this and all contained model items.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.PdfModelWriter.ContentSource">
+            <summary>
+            Resolves ContentKey values of Text and TextBlock elements.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.PdfModelWriter.OnDocumentBegin">
+            <summary>
+            Callback action called when starting a document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.PdfModelWriter.OnDocumentEnd">
+            <summary>
+            Callback action called when finalizing a document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.PdfModelWriter.OnPageBegin">
+            <summary>
+            Callback action called when starting a new page.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.PdfModelWriter.OnPageEnd">
+            <summary>
+            Callback action called when finalizing a page.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Model.PdfModelWriter.WriteDocument(Arebis.Pdf.Model.Document,System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Convenience method to write a document at once to a file.
+            </summary>
+            <param name="document">The document to write.</param>
+            <param name="toFilename">The filename to write to.</param>
+            <param name="contentSource">An optional content source to resolve ContentKey values of Text and TextBlock elements.</param>
+        </member>
+        <member name="M:Arebis.Pdf.Model.PdfModelWriter.Write(Arebis.Pdf.Model.Document,System.IO.Stream)">
+            <summary>
+            Writes a PDF document based on the given document object to the given stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Model.PdfModelWriter.Write(Arebis.Pdf.Model.IDocumentItem,Arebis.Pdf.Writing.PdfDocumentWriter)">
+            <summary>
+            Writes the given document item to the given document writer.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Model.PdfModelWriter.Write(Arebis.Pdf.Model.IPageItem,Arebis.Pdf.Writing.PdfPageWriter)">
+            <summary>
+            Writes a page item to the given PDF page writer.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Writing.PdfDocumentWriter">
+            <summary>
+            A PdfDocumentWriter provides you a low-level access API for writing
+            Adobe PDF documents.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.NewPage(Arebis.Pdf.Writing.PdfPageFormat)">
+            <summary>
+            Starts a new page. Dispose page when done.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.NewPage(System.Double,System.Double)">
+            <summary>
+            Starts a new page. Dispose page when done.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.WriteRaw(System.Byte[])">
+            <summary>
+            Writes raw bytes to the PDF document stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.WriteRaw(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Writes raw bytes to the PDF document stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.WriteRaw(System.String)">
+            <summary>
+            Writes raw string to the PDF document stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.Flush">
+            <summary>
+            Flushes the document stream.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfDocumentWriter.Position">
+            <summary>
+            Gets the current byte position within the stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.Close">
+            <summary>
+            Writes the PDF document trailer and closes the stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.AddImage(System.Drawing.Image)">
+            <summary>
+            Adds an image to the PDF document and returns a reference object to it.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.AddXObject(Arebis.Pdf.Common.PdfObject)">
+            <summary>
+            Adds an 'XObject' to the stream and returns a reference object to it.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.GetNameOfXObject(Arebis.Pdf.Common.PdfObjectRef)">
+            <summary>
+            Retrieves the name of a previously added XObject.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.GetImageAspectRatio(Arebis.Pdf.Common.PdfObjectRef)">
+            <summary>
+            Returns the aspect ratio of a previously added image.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.GetImageHeight(Arebis.Pdf.Common.PdfObjectRef,System.Double)">
+            <summary>
+            Returns the height the previoulsy added image should have, when rendered with the given width, in order to have
+            the same aspect ration.
+            </summary>
+            <param name="imageRef">Reference to the image previoulsy added.</param>
+            <param name="forWidth">Width to render the image with.</param>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.RegisterFont(Arebis.Pdf.Common.PdfFont)">
+            <summary>
+            Registers a font for use in this PDF document.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.NewObjectRef">
+            <summary>
+            Creates a new PdfObjectRef object with the documents generation Id and next (unique) object Id.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.WriteObject(Arebis.Pdf.Common.PdfObject)">
+            <summary>
+            Writes a PdfObject to this document and returns the reference to that object.
+            Note that this does not add the object to a page.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.WriteObject(Arebis.Pdf.Common.PdfObject,Arebis.Pdf.Common.PdfObjectRef)">
+            <summary>
+            Writes a PdfObject to this document given its object reference.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.WritePage(Arebis.Pdf.Common.PdfObject)">
+            <summary>
+            Writes a PdfPageObject and links it to the pages tree.
+            For internal use.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.WriteSignaturePlaceHolder">
+            <summary>
+            Reserves room in the document for a digital signature.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.SignAndClose(Arebis.Pdf.Common.PdfSignatureInformation)">
+            <summary>
+            Signs the document and closes the document stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfDocumentWriter.Dispose">
+            <summary>
+            Closes and disposes this document writer.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageFormat.#ctor(System.Double,System.Double,Arebis.Pdf.Writing.PdfPageOrientation)">
+            <summary>
+            Instantiates a new page format.
+            Use predefined static instances for A3, A4, A5 and Letter.
+            </summary>
+            <param name="width">Width of the page in points (1 inch = 72 points).</param>
+            <param name="height">Height of the page in points (1 inch = 72 points).</param>
+            <param name="orientation">Page orientation.</param>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfPageFormat.Height">
+            <summary>
+            Height of the page in points (1 inch = 72 points).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfPageFormat.Width">
+            <summary>
+            Width of the page in points (1 inch = 72 points).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfPageFormat.Orientation">
+            <summary>
+            Page orientation.
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.A3Portrait">
+            <summary>
+            A3 paper format in portrait (1190x1682).
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.A3Landscape">
+            <summary>
+            A3 paper format in landscape (1682x1190).
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.A4Portrait">
+            <summary>
+            A4 paper format in portrait (595x841).
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.A4Landscape">
+            <summary>
+            A4 paper format in landscape (841x595).
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.A5Portrait">
+            <summary>
+            A5 paper format in portrait (297½x420½).
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.A5Landscape">
+            <summary>
+            A5 paper format in landscape (420½x297½).
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.LetterPortrait">
+            <summary>
+            Letter paper format in portrait (612x792).
+            </summary>
+        </member>
+        <member name="F:Arebis.Pdf.Writing.PdfPageFormat.LetterLandscape">
+            <summary>
+            Letter paper format in landscape (792x612).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfGraphicsOptions.Apply(Arebis.Pdf.Writing.PdfScriptObject)">
+            <summary>
+            Applies these options to the given script object.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Writing.PdfPageWriter">
+            <summary>
+            A PdfPageWriter helps in managing page objects and writing content to them.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfPageWriter.DocumentWriter">
+            <summary>
+            Writer of the document this pagewriter belongs to.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfPageWriter.Width">
+            <summary>
+            Width of the page.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfPageWriter.Height">
+            <summary>
+            Height of the page.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfPageWriter.Content">
+            <summary>
+            Content of the page.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriter.WriteObject(Arebis.Pdf.Common.PdfObject)">
+            <summary>
+            Writes the given object to the page (writes it on the document and adds it on this page).
+            Returns an object reference to the object.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriter.WriteObjectRef(Arebis.Pdf.Common.PdfObjectRef)">
+            <summary>
+            Adds the object referenced by the given object reference to this page.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriter.Dispose">
+            <summary>
+            Closes and disposes this PageWriter.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriter.Close">
+            <summary>
+            Closes this PageWriter, writing as PageObject to the document.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawCircle(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws a circle.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawLine(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws a line.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawRectangle(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions,System.Double)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws a rectangle given left-upper coordinates and width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawRectangle2(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions,System.Double)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws a rectangle given 2 coordinates.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawRoundedRectangle(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws a rounded rectangle given left-upper coordinates and width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawRoundedRectangle2(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws a rounded rectangle given 2 coordinates.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawOval(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws an oval given left-upper coordinates and width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawOval2(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Writing.PdfGraphicsOptions)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws a oval given 2 coordinates.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawImageRef(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,Arebis.Pdf.Common.PdfObjectRef,System.Double,System.Double,Arebis.Pdf.Writing.PdfImagePlacement,Arebis.Pdf.Writing.PdfImageRotation)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws an image previously added to the DocumentWriter,
+            scaled to the given width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawImageRef(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,Arebis.Pdf.Common.PdfObjectRef,System.Double,System.Double)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws an image previously added to the DocumentWriter,
+            stretched to the given width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawImage(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Drawing.Image,System.Double,System.Double,Arebis.Pdf.Writing.PdfImagePlacement,Arebis.Pdf.Writing.PdfImageRotation)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws an image,
+            scaled to the given width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawImage(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.Drawing.Image,System.Double,System.Double)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws an image,
+            stretched to the given width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawXObjectRef(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,Arebis.Pdf.Common.PdfObjectRef,System.Double)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws an XObject.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawText(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.String,Arebis.Pdf.Writing.PdfTextOptions,System.Double)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws text.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.DrawTextblock(Arebis.Pdf.Writing.PdfPageWriter,System.Double,System.Double,System.String,System.Double,Arebis.Pdf.Writing.PdfTextOptions,System.Double,System.Int32)">
+            <summary>
+            Adds a PdfScriptObject to the page that draws text that autowraps at the given blockWidth.
+            </summary>
+            <param name="page">Page to draw to.</param>
+            <param name="x">X coordinate left-bottom of the first line of text.</param>
+            <param name="y">Y coordinate left-bottom of the first line of text.</param>
+            <param name="text">Text to draw.</param>
+            <param name="blockWidth">Width of the text block.</param>
+            <param name="options">Text options (font, style, etc.)</param>
+            <param name="leftRotationDegrees">Left rotation expressed in degrees.</param>
+            <param name="align">Alignment: -1=left (default), 0=center, +1=right.</param>
+            <remarks>
+            Currently, when alignment is non-left, the rotation arguments is ignored as both are not supported together.
+            </remarks>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfPageWriterExtensions.Swap``1(``0@,``0@)">
+            <summary>
+            Swaps the values of the two given variables.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Writing.PdfScriptObject">
+            <summary>
+            A PdfObject made with Page Markup Operations.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.RegisterFont(Arebis.Pdf.Common.PdfFont)">
+            <summary>
+            Registers a font as referenced.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.Write(System.String)">
+            <summary>
+            Writes directly to the operators stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.WriteLine">
+            <summary>
+            Writes directly to the operators stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.WriteLine(System.String)">
+            <summary>
+            Writes directly to the operators stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.WriteComment(System.String)">
+            <summary>
+            Writes comment to the operators stream.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginGraphicsState">
+            <summary>
+            Saves the graphic state on the stack.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.EndGraphicsState">
+            <summary>
+            Restores the graphic state from the stack.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.ConcatenateMatrix(Arebis.Pdf.Common.PdfTransformationMatrix)">
+            <summary>
+            Concatenate given matrix to current transformation matrix.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.ConcatenateMatrix(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Concatenate given matrix to current transformation matrix.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetStrokeWidth(System.Double)">
+            <summary>
+            Sets the line or stroke width.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetLineCapStyle(Arebis.Pdf.Common.PdfLineCapStyle)">
+            <summary>
+            Sets the line cap style.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetLineJoinStyle(Arebis.Pdf.Common.PdfLineJoinStyle)">
+            <summary>
+            Sets the line join style.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetLineDashPattern(Arebis.Pdf.Common.PdfLineDashPattern)">
+            <summary>
+            Sets the line dash pattern.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetLineDashPattern(System.Int32,System.Int32)">
+            <summary>
+            Sets the line dash pattern.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginPath(System.Double,System.Double)">
+            <summary>
+            Sets the drawing path beginning (and starts a new path).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.EndPath(System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Ends the drawing path and optionally closes, strokes and/or fills the path.
+            </summary>
+            <param name="closePath">Whether to close the path (draw a line from the last coordinates back to the path start).</param>
+            <param name="strokePath">Whether to stroke the path (draw it's line).</param>
+            <param name="fillPath">Whether to fill the path figure.</param>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawLineTo(System.Double,System.Double)">
+            <summary>
+            Draws a line from the current path to the given coordinates.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawLine(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line given 2 coordinates (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawLineA(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a line from x, y with given angle and length (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawBezierCurve(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a cubic bezier curve.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawOval2(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws an oval or circle within the rectangle defined by the given coordinates (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawOval(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws an oval or circle within the rectangle (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawCircle(System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a circle with the given center coordinates and ray (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawRectangle(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a rectangle given width and height.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawRectangle2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a rectangle given 2 opposite points (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawRoundedRectangle(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a rounded rectangle given width, height and radius (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawRoundedRectangle2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Draws a rounded rectangle given 2 opposite points and a radius.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawText(System.String)">
+            <summary>
+            Draws text.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawExternalObject(System.String)">
+            <summary>
+            Draws an XObject reference (i.e. to an image).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawImageByName(System.Double,System.Double,System.Double,System.Double,System.String,System.Double)">
+            <summary>
+            Draws an image (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawImageByName2(System.Double,System.Double,System.Double,System.Double,System.String)">
+            <summary>
+            Draws an image (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawImageByRef(System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Common.PdfObjectRef)">
+            <summary>
+            Draws an image (convenience method).
+            Assumes default naming of object references is used.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.DrawImageByRef2(System.Double,System.Double,System.Double,System.Double,Arebis.Pdf.Common.PdfObjectRef)">
+            <summary>
+            Draws an image (convenience method).
+            Assumes default naming of object references is used.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetStrokeColor(Arebis.Pdf.Common.PdfColor)">
+            <summary>
+            Sets the stroke or pen color.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetFillColor(Arebis.Pdf.Common.PdfColor)">
+            <summary>
+            Sets the fill color.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetTextRenderingMode(Arebis.Pdf.Common.PdfTextRenderingMode)">
+            <summary>
+            Sets the text rendering mode.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetFont(Arebis.Pdf.Common.PdfFont,System.Double)">
+            <summary>
+            Sets the font type and size.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetTextStartPosition(System.Double,System.Double)">
+            <summary>
+            Sets the text start position.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginText">
+            <summary>
+            Begins a block of text.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginText(System.Double,System.Double)">
+            <summary>
+            Begins a block of text with the given start position (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginText(System.Double,System.Double,System.Double)">
+            <summary>
+            Begins a block of text with the given start position and rotation (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetTextRotation(System.Double,System.Double,System.Double)">
+            <summary>
+            Writes a transformation matrix for rotation (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.Rotate(System.Double,System.Double,System.Double)">
+            <summary>
+            Modifies the transformation matrix for rotation of graphics (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginText(System.Double,System.Double,Arebis.Pdf.Common.PdfFont,System.Double)">
+            <summary>
+            Begins a block of text with the given start position and font (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginText(System.Double,System.Double,System.Double,Arebis.Pdf.Common.PdfFont,System.Double)">
+            <summary>
+            Begins a block of text with the given start position, rotation and font (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.BeginText(System.Double,System.Double,Arebis.Pdf.Writing.PdfTextOptions)">
+            <summary>
+            Begins a block of text with the given options (convenience method).
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.EndText">
+            <summary>
+            Ends a block of text.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetTextTransformationMatrix(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Sets the text matrix to control position, rotation and skewing.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.ModifyTransformationMatrix(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Modifies the current transformation matrix to control position, rotation and skewing.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfScriptObject.SetTextTransformationMatrix(Arebis.Pdf.Common.PdfTransformationMatrix)">
+            <summary>
+            Sets the text matrix to control position, rotation and skewing.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.InkColor">
+            <summary>
+            Ink in which the font is written.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.OutlineColor">
+            <summary>
+            Outline color of the font (requires stroking RenderingMode).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.Font">
+            <summary>
+            Font type.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.FontSize">
+            <summary>
+            Size of the font.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.LeftRotationDegrees">
+            <summary>
+            Number of degrees to rotate the text to the left.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.RenderingMode">
+            <summary>
+            Rendering mode of the text (Fill (default), Stroke, FillAndStroke,...).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.LineDashPattern">
+            <summary>
+            Line dash pattern.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.LineCapStyle">
+            <summary>
+            Line cap style.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Writing.PdfTextOptions.OutlineWidth">
+            <summary>
+            Outline width.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Writing.PdfTextOptions.Apply(Arebis.Pdf.Writing.PdfScriptObject,System.Double,System.Double)">
+            <summary>
+            Applies these options to the given script object, and sets initial coordinates.
+            </summary>
+        </member>
+    </members>
+</doc>

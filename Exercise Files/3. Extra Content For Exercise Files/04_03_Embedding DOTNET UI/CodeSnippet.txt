@@ -1,0 +1,101 @@
+// Imports
+import java.awt.Button;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.Panel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import com.javonet.JavonetApartmentState;
+import com.javonet.api.NControlContainer;
+
+	// Code to call method -------------------------------------------
+
+		EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                   try {
+                	   TestWinFormsControl();
+                   } catch (JavonetException e) {
+                         // TODO Auto-generated catch block
+                         e.printStackTrace();
+                   }
+            }});
+
+// Code for implementation
+		// 04_03
+	private	static void TestWinFormsControl() throws JavonetException {
+		System.out.println("\nExercise 04_03\n---------------");	
+		
+		// Reminder : Disable earlier activation  
+		// That is, after 'setApartmentState'.				
+		Javonet.setApartmentState(JavonetApartmentState.STA);		
+		
+		Javonet.activate("javonettester@gmail.com", "t7JB-Yi56-b5M4-Bg42-Jn4g",JavonetFramework.v45);
+		AddReferences();
+		
+      	//Creating .NET object
+      	NObject testControls = Javonet.New("TestControl");
+      	
+      	// ** Start .NET interaction demo code************************************
+      	//InvokeDotnetButton(testControls); 
+      	// ** End *****************************************************************
+      	
+      	// Wrap the control in a container
+      	NControlContainer testControlsContainer = new NControlContainer(testControls);
+
+	 	// Initialize and build java GUI
+      	final Frame guiFrame = new Frame();
+      	
+      	// Have program exit when the frame closes
+      	guiFrame.addWindowListener(new WindowAdapter() {
+      		public void windowClosing(WindowEvent we) {
+      			guiFrame.dispose();
+      		}
+      	});
+      	
+      	// Set the Title, Size, Layout properties
+      	guiFrame.setTitle("Example GUI");
+      	guiFrame.setSize(980, 500);
+      	      	
+     
+      	// ** Start Java interaction demo code*************************************
+      	InvokeJavaButton(testControls,testControlsContainer,guiFrame); 	 
+      	// ** End *****************************************************************      	
+      	
+      	guiFrame.add(testControlsContainer);
+      	guiFrame.setVisible(true);     
+	}
+	
+	private static void InvokeJavaButton(NObject testControls,
+										 NControlContainer testControlsContainer,
+										 Frame guiFrame) 
+												 throws JavonetException {
+		guiFrame.setLayout(new FlowLayout());
+		Panel navigationBar = new Panel();
+      	navigationBar.setPreferredSize(new Dimension(400,300));
+      	testControlsContainer.setPreferredSize(new Dimension(400,300));
+      	Button btn = new Button();
+      	btn.setLabel("Change background of .NET control");
+      	
+      	btn.addActionListener(new ActionListener() {
+      		
+      		@Override 
+      		public void actionPerformed(ActionEvent arg0) {
+      			try {
+					testControls.set("BackColor", Javonet.getType("Color").getRef("LightGreen"));
+				} catch (JavonetException e) {
+					e.printStackTrace();
+				}
+      		}
+      	});
+      	
+      	navigationBar.add(btn);
+      	guiFrame.add(navigationBar);
+	}
+	
+// TODO - Create 'InvokeDotnetButton()'
+
+// END OF CODE SNIPPET FOR 04_03

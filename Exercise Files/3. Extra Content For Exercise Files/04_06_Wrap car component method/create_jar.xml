@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_jar" name="Create Jar for Project CarSDK">
+    <!--this file was created by Eclipse Runnable JAR file Export Wizard-->
+    <!--ANT 1.7 is required-->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}/.."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_jar">
+        <jar destfile="${dir.jarfile}/CarComponent.jar">
+            <manifest>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/bin"/>
+        	<zipgroupfileset dir="${dir.jarfile}/lib" includes="**/*.jar" />
+        </jar>
+    </target>
+</project>
+<!-- THIS IS BUILD AUTOMATION FILE. COUNTERPART OF .NET MSBUILD -->
+<!-- IT IS CONFIGURED TO CREATE JAR FILE WITH YOUR DLL -->

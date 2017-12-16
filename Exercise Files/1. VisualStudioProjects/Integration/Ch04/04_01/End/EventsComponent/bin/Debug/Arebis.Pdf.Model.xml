@@ -1,0 +1,477 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Arebis.Pdf.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Arebis.Pdf.Model.Area">
+            <summary>
+            An area of a PDF page that can have its own coordinate space and default options.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Model.Area.#ctor">
+            <summary>
+            Creates a new Area element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Area.Items">
+            <summary>
+            The items in the area.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Area.CoordinateSpace">
+            <summary>
+            A custom coordinate space for the area.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Area.GraphicsOptionsRef">
+            <summary>
+            Graphics options to use by default within the scope of this area.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Area.TextOptionsRef">
+            <summary>
+            Text options to use by default within the scope of this area.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.BoxItem">
+            <summary>
+            Base class for boxes page elements.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.BoxItem.Height">
+            <summary>
+            Height of the element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.BoxItem.Width">
+            <summary>
+            Width of the element.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.CoordinateSpace">
+            <summary>
+            A custom coordinate space.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.CoordinateSpace.Width">
+            <summary>
+            Width of the element expressed in the custom coordinate space.
+            If missing, the width is expressed in the same unit as the underlying physical coordinate space.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.CoordinateSpace.Height">
+            <summary>
+            Height of the element expressed in the custom coordinate space.
+            If missing, calculates the height based on the width, conserving the aspect ratio.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Cross">
+            <summary>
+            A cross element.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Document">
+            <summary>
+            Represents a PDF document.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Model.Document.#ctor">
+            <summary>
+            Constructs a new PDF document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Document.Title">
+            <summary>
+            Title of the document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Document.Subject">
+            <summary>
+            Subject of the document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Document.Keywords">
+            <summary>
+            Keywords of the document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Document.Author">
+            <summary>
+            Author of the document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Document.Items">
+            <summary>
+            Content of the document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Document.GraphicsOptionsRef">
+            <summary>
+            Graphics options to use by default within the scope of the document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Document.TextOptionsRef">
+            <summary>
+            Text options to use by default within the scope of the document.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Figure">
+            <summary>
+            Base class for figurative PDF page elements.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Figure.GraphicsOptionsRef">
+            <summary>
+            Graphics options to apply to the figure.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Font">
+            <summary>
+            Definition of a font.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Font.FontRef">
+            <summary>
+            Reference to a (predefined) font.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.GraphicsOptions">
+            <summary>
+            A definition of graphics options.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.GraphicsOptions.TemplateRef">
+            <summary>
+            Reference to a graphics options to use as template.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.GraphicsOptions.StrokeColor">
+            <summary>
+            Stroke color.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.GraphicsOptions.FillColor">
+            <summary>
+            Fill color.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.GraphicsOptions.StrokeWidth">
+            <summary>
+            Stroke width.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.GraphicsOptions.LineDashPattern">
+            <summary>
+            Line dash pattern.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.GraphicsOptions.LineCapStyle">
+            <summary>
+            Line cap style.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.GraphicsOptions.LineJoinStyle">
+            <summary>
+            Line join style.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Image">
+            <summary>
+            An image element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Image.ImageRef">
+            <summary>
+            Reference to a definied ImageObj element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Image.Url">
+            <summary>
+            URL of the image.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Image.FileName">
+            <summary>
+            Filename of the image.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Image.Placement">
+            <summary>
+            Placement or positioning of the image (Stretch, Center, LeftOrTop, RightOrBottom, LeftOrBottom, RightOrTop).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Image.Rotation">
+            <summary>
+            Free rotation of the image (i.e. "45", "45°", "45deg", "0.7854rad", "12.5%" and "0.125frac" are all equivalent).
+            </summary>
+            <remarks>
+            If a free rotation is given, the image height, placement and imagerotation settings are ignorded.
+            The image is drawn on it's X,Y location with given width and matching height and requested rotation.
+            </remarks>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Image.ImageRotation">
+            <summary>
+            Rotation of the image (None, Left, Right, UpsideDown).
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.ImageObject">
+            <summary>
+            An image object that can be referenced from in pages.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.ImageObject.Url">
+            <summary>
+            URL of the image.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.ImageObject.FileName">
+            <summary>
+            Filename of the image.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Line">
+            <summary>
+            A line element.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.ModelItem">
+            <summary>
+            Base class for all PDF model types.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.ModelItem.Id">
+            <summary>
+            An Id given to the element to facilitate identification by code.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.ModelItem.Class">
+            <summary>
+            Classes (space-separated class names) of the element to facilitate classification by code.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.ModelItem.ClassValues">
+            <summary>
+            Read-only accessor to get all class names in array form.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.ModelItem.Hidden">
+            <summary>
+            Whether the element should be hidden.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Oval">
+            <summary>
+            An oval or circle element.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Page">
+            <summary>
+            A page in a PDF document.
+            </summary>
+        </member>
+        <member name="M:Arebis.Pdf.Model.Page.#ctor">
+            <summary>
+            Creates a new page in a PDF document.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Page.Format">
+            <summary>
+            Format of the page ("A3", "A4", "A5", "Letter").
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Page.Height">
+            <summary>
+            Custom height of the page (if not using the Format).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Page.Width">
+            <summary>
+            Custom width of the page (if not using the Format).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Page.Items">
+            <summary>
+            Items on this page.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Page.CoordinateSpace">
+            <summary>
+            Coordinate space to use on this page.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Page.GraphicsOptionsRef">
+            <summary>
+            Graphics options to use by default within the scope of this page.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Page.TextOptionsRef">
+            <summary>
+            Text options to use by default within the scope of this page.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.PositionalItem">
+            <summary>
+            Base class for positional page elements.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.PositionalItem.X">
+            <summary>
+            X coordinate.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.PositionalItem.Y">
+            <summary>
+            Y coordinate.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Rectangle">
+            <summary>
+            A rectangle element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Rectangle.Rotation">
+            <summary>
+            Rotation of the rectangle (i.e. "45", "45°", "45deg", "0.7854rad", "12.5%" and "0.125frac" are all equivalent).
+            </summary>
+            <remarks>
+            Note that if the rotation is given, the radius parameter is ignored.
+            </remarks>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Rectangle.Radius">
+            <summary>
+            The radius of the rectangle (to form rounded rectangles).
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Script">
+            <summary>
+            A script element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Script.ScriptRef">
+            <summary>
+            Reference to a script object.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Script.Content">
+            <summary>
+            The PDF script.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.ScriptObject">
+            <summary>
+            A PDF script object.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.ScriptObject.Content">
+            <summary>
+            The PDF script.
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.Text">
+            <summary>
+            A text element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Text.TextOptionsRef">
+            <summary>
+            Reference to a text options to use.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Text.Content">
+            <summary>
+            Content (text) of this text element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Text.ContentKey">
+            <summary>
+            Content key of this text element for lookup in the ContentSource dictionary.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.Text.Rotation">
+            <summary>
+            Rotation of the text (i.e. "45", "45°", "45deg", "0.7854rad", "12.5%" and "0.125frac" are all equivalent).
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.TextBlock">
+            <summary>
+            A text block element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextBlock.TextOptionsRef">
+            <summary>
+            Reference to a text options to use.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextBlock.Content">
+            <summary>
+            Content (text) of this text block element.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextBlock.ContentKey">
+            <summary>
+            Content key of this text block element for lookup in the ContentSource dictionary.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextBlock.Rotation">
+            <summary>
+            Rotation of the text block (i.e. "45", "45°", "45deg", "0.7854rad", "12.5%" and "0.125frac" are all equivalent).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextBlock.Alignment">
+            <summary>
+            Alignment of the textblock ("left" or "-1", "center" or "0", "right" or "1")
+            </summary>
+        </member>
+        <member name="T:Arebis.Pdf.Model.TextOptions">
+            <summary>
+            A definition of text options.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.TemplateRef">
+            <summary>
+            Reference to a text option to use as template.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.InkColor">
+            <summary>
+            Ink color.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.FontRef">
+            <summary>
+            Reference to a (predefined) font to use.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.FontSize">
+            <summary>
+            Size of the font.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.LineDashPattern">
+            <summary>
+            Line dash pattern.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.LineCapStyle">
+            <summary>
+            Line cap style.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.RenderingMode">
+            <summary>
+            Rendering mode (Fill, Stroke, FillAndStroke,...).
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.OutlineColor">
+            <summary>
+            Outline color.
+            </summary>
+        </member>
+        <member name="P:Arebis.Pdf.Model.TextOptions.OutlineWidth">
+            <summary>
+            Outline width.
+            </summary>
+        </member>
+    </members>
+</doc>

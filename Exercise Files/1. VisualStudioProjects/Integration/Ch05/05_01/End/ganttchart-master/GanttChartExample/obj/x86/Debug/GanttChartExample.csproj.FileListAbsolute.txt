@@ -1,0 +1,12 @@
+C:\temp\ganttchart-master\GanttChartExample\bin\Debug\GanttChartExample.exe
+C:\temp\ganttchart-master\GanttChartExample\bin\Debug\GanttChartExample.pdb
+C:\temp\ganttchart-master\GanttChartExample\bin\Debug\GanttChart.dll
+C:\temp\ganttchart-master\GanttChartExample\bin\Debug\GanttChart.pdb
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\GanttChartExample.csprojResolveAssemblyReference.cache
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\Braincase.GanttChart.ExampleSimple.resources
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\Braincase.GanttChart.ExampleFull.resources
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\Braincase.GanttChart.Properties.Resources.resources
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\GanttChartExample.csproj.GenerateResource.Cache
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\GanttChartExample.csproj.CoreCompileInputs.cache
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\GanttChartExample.exe
+C:\temp\ganttchart-master\GanttChartExample\obj\x86\Debug\GanttChartExample.pdb

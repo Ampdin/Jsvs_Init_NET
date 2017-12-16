@@ -1,0 +1,6 @@
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\CarComponent\bin\Debug\CarComponent.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\CarComponent\bin\Debug\CarComponent.pdb
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\CarComponent\obj\Debug\CarComponent.csprojResolveAssemblyReference.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\CarComponent\obj\Debug\CarComponent.csproj.CoreCompileInputs.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\CarComponent\obj\Debug\CarComponent.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\CarComponent\obj\Debug\CarComponent.pdb

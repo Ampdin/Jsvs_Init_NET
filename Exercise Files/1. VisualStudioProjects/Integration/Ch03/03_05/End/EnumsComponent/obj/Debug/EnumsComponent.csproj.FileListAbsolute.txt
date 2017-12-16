@@ -1,0 +1,17 @@
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_05\End\EnumsComponent\bin\Debug\EnumsComponent.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_05\End\EnumsComponent\bin\Debug\EnumsComponent.pdb
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.pdb
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_05\End\EnumsComponent\bin\Debug\EnumsComponent.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_05\End\EnumsComponent\bin\Debug\EnumsComponent.pdb
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.csprojResolveAssemblyReference.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.pdb
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_05\End\EnumsComponent\bin\Debug\EnumsComponent.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_05\End\EnumsComponent\bin\Debug\EnumsComponent.pdb
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.csprojResolveAssemblyReference.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.csproj.CoreCompileInputs.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_05\End\EnumsComponent\obj\Debug\EnumsComponent.pdb

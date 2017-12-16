@@ -1,0 +1,21 @@
+import com.javonet.Javonet;
+import com.javonet.JavonetException;
+import com.javonet.JavonetFramework;
+import com.javonet.api.NObject;
+
+public class MyFinalClass {
+
+	public static void main(String[] args) throws JavonetException {
+		System.out.println("\nExercise 01_04\n---------------");
+		
+		Javonet.activate("javonettester@gmail.com", "t7JB-Yi56-b5M4-Bg42-Jn4g",JavonetFramework.v45);
+		Javonet.addReference("CarComponent.dll");
+		
+		// Invoke method
+		NObject secondClassObj = Javonet.New("CarSDK");
+		String result = secondClassObj.invoke("RevEngine");
+		System.out.println(result);	
+
+	}
+
+}

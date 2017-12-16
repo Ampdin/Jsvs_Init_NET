@@ -1,0 +1,22 @@
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.pdb
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.pdb
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_02\End\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_02\End\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.pdb
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.pdb
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_02\End\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_02\End\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.pdb
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.csprojResolveAssemblyReference.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.pdb
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_02\End\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_02\End\FieldsPropertiesComponent\bin\Debug\FieldsPropertiesComponent.pdb
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.csprojResolveAssemblyReference.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.csproj.CoreCompileInputs.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch03\03_02\End\FieldsPropertiesComponent\obj\Debug\FieldsPropertiesComponent.pdb

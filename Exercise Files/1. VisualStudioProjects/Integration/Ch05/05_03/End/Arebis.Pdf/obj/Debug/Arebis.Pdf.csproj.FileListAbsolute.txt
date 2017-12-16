@@ -1,0 +1,52 @@
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe.config
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.pdb
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.exe
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.pdb
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\DotNetZip.dll
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.xml
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.xml
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\DotNetZip.xml
+C:\Users\Reynald Adolphe\Documents\Visual Studio 2017\Projects\DotnetJavaIntegration\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csprojResolveAssemblyReference.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe.config
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.pdb
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\DotNetZip.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.xml
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.xml
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\bin\Debug\DotNetZip.xml
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csprojResolveAssemblyReference.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.exe
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_02\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.pdb
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe.config
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.pdb
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\DotNetZip.dll
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.xml
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.xml
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\DotNetZip.xml
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csprojResolveAssemblyReference.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csproj.CoreCompileInputs.cache
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.exe
+C:\Users\Reynald Adolphe\Desktop\Exercise Files\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.pdb
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe.config
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.exe
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.pdb
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\DotNetZip.dll
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.xml
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\Arebis.Pdf.Model.xml
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\bin\Debug\DotNetZip.xml
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csprojResolveAssemblyReference.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.csproj.CoreCompileInputs.cache
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.exe
+C:\Users\Staff2\dev\Ex_Files_Java_Int_NET_Framework\Exercise Files\1. VisualStudioProjects\Integration\Ch05\05_03\End\Arebis.Pdf\obj\Debug\Arebis.Pdf.pdb
