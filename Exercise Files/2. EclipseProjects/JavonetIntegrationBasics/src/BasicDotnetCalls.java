@@ -1,6 +1,7 @@
 import com.javonet.Javonet;
 import com.javonet.JavonetException;
 import com.javonet.api.NObject;
+import com.javonet.api.NType;
 
 public class BasicDotnetCalls {
 
@@ -12,12 +13,14 @@ public class BasicDotnetCalls {
 		AddReferences();
 		
 		//TestCarSDK();
-		TestStaticInstanceSDK();
+		//TestStaticInstanceSDK();
+		TestFieldsPropertiesComponentSDK();
 	}
 	
 	private static void AddReferences() throws JavonetException {
 		Javonet.addReference("CarComponent.dll");
 		Javonet.addReference("StaticInstanceComponent.dll");
+		Javonet.addReference("FieldsPropertiesComponent.dll");
 	}
 
 	// 01_04	
@@ -42,6 +45,22 @@ public class BasicDotnetCalls {
 		System.out.println(result2);
 	}
 	// 03_02
+	private static void TestFieldsPropertiesComponentSDK() throws JavonetException {
+		System.out.println("\nExercise 03_02\n-----------");
+		
+		// Demo of static field
+		NType sampleType = Javonet.getType("FieldsPropertiesSDK");
+		sampleType.set("MyStaticField", 10);
+		Integer staticVal = sampleType.get("MyStaticField");
+		System.out.println("MyStaticField output " + staticVal);
+		
+		// Demo of instance field
+		NObject sampleObj = Javonet.New("FieldsPropertiesSDK");
+		sampleObj.set("MyInstanceField", 20);
+		Integer instanceVal = sampleObj.get("MyInstanceField");
+		System.out.println("MyInstanceField output " + instanceVal);
+	}
+
 	// 03_03
 	// 03_04
 	// 03_05
