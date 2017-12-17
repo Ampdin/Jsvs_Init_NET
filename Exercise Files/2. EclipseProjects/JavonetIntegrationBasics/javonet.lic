@@ -1,0 +1,28 @@
+<auth xmlns="">
+  <licenceKey>x7L5-n2C9-x3Y4-Ze52-k9E5</licenceKey>
+  <isServerEditionOs>False</isServerEditionOs>
+  <hostname><![CDATA[LAPTOP-7024]]></hostname>
+  <productVersion>1.4.34.15815</productVersion>
+  <userName>Max Martin</userName>
+  <appName>javOnetTrial|javOnet</appName>
+  <appVersion>3.0</appVersion>
+  <email>cyranova@msn.com</email>
+  <verify>FAyoPDV8o9IX2Ez2TUNv6fcaWxiANW4bSe5FTatKcVsGypxvj518d9ZVi2NzygNkVfdnMwEMXJJqImaaRxXWv4Rdm0BCz9IEFA39/D6RjsY1dAGXwzUM2HL0SqprCYat8Rv3WuEZKMN7savuYBd8iNl6KMtxRzWdkjb6u506TY8=</verify>
+  <callsAllowed />
+  <classesAllowed />
+  <approvedIds>D/CLkojsxz8tK36PlYBQTqkg29asIJnzR9X4rlbjzIj3VMaI94jQt3fVuwnAq/Ls5U8ZVbBv+SksVDMo2WDw+VtI1DPQI6/bHMKIoO1k5eQvESTczTLeNG3MpkfkYTL7/8hzx7asw46/8nB97eJMbcx+U2jszDaw2gr1EVCyNFw=</approvedIds>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>hjdmXyg9gJ6GYZ6L2sjKBzMB/p8=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>iC+j+gwL3JXAhQTz2Hx/hvPsSvLPpf/HV9hQljJQlmdmQ3gihPY9H3oWyV7+UuxUrCeAK0vrYdwvBQh27FPCpt2LopQTpR93U8Ooe4i/f1DGTg1GCQMJJjcXPchRC1lxlkb9dTto130o4VBDTkp9RWkqyCB11QJKffxDI1/kJ9E=</SignatureValue>
+  </Signature>
+</auth>
