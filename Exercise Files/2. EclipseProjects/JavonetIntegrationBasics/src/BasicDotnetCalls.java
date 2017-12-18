@@ -12,9 +12,9 @@ public class BasicDotnetCalls {
 		
 		AddReferences();
 		
-		//TestCarSDK();
-		//TestStaticInstanceSDK();
-		TestFieldsPropertiesComponentSDK();
+//		TestCarSDK();
+//		TestStaticInstanceSDK();
+//		TestFieldsPropertiesComponentSDK();
 		PassingArgumentsSDK1();
 	}
 
@@ -65,14 +65,15 @@ public class BasicDotnetCalls {
 
 	// 03_03
 	private static void PassingArgumentsSDK1() throws JavonetException {
+		System.out.println("\nExercise 03_03\n-----------");
 		
 		// Demo Passing Reference-Type Arguments
-		NOject objectWithProp = Javonet.New("ObjectWithProp");
+		NObject objectWithProp = Javonet.New("ObjectWithProp");
 		objectWithProp.set("PropTextValue", "This is an alert stored in .NET object prop");
 		
-		NOject objectUsingObjectProp = Javonet.New("ObjectUsingObjectProp");
+		NObject objectUsingObjectProp = Javonet.New("ObjectUsingObjectProp");
 		objectUsingObjectProp.invoke("DisplayPropValue",objectWithProp);
-		objectUsingObjectProp.set("objProperty", objectWithProp);
+		objectUsingObjectProp.set("ObjProperty", objectWithProp);
 		
 		System.out.println("/n*** Displaying the value of the property " 
 							+ "of an object instance that was set to the property ***\\n");
